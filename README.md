@@ -50,12 +50,4 @@ Dieses Projekt ist eine einfache Nachrichten-Website, die mit dem Ziel entwickel
 Die Inhalte der Artikel sind nicht innovativ und weisen häufig Redundanzen auf. Diese Website dient daher eher als eine technische Demonstration einer Nachrichtenplattform als einer Informationsquelle.
 
 ## Autor
-Nevan Alberola, 2024
-
-## Installation 
-
-Klone das Repository
-   ```bash
-   git clone https://github.com/dein-benutzername/nachrichten-website.git
-   
-   ```
+Nevan Alberola, 2024  
