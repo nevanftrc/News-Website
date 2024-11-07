@@ -1,0 +1,46 @@
+/* Anpassung der Hauptnavigationsleiste */
+#main-nav .container {
+  grid-template-columns: 1fr; /* Einspaltiges Layout */
+  gap: 1.2rem; /* Abstand zwischen Elementen */
+}
+
+#main-nav ul,
+#main-nav .logo {
+  justify-self: center; /* Zentrierte Ausrichtung */
+}
+
+#main-nav ul li a {
+  padding: 0.5rem; /* Innenabstand für Links */
+}
+
+/* Layout der Artikelübersicht */
+#home-articles .articles-container {
+  grid-template-columns: repeat(2, 1fr); /* Zweispaltiges Layout */
+}
+
+/* Medienabfragen für Bildschirme unter 600px */
+@media (max-width: 600px) {
+  #home-articles .articles-container,
+  #main-footer .footer-container {
+    grid-template-columns: 1fr; /* Einspaltiges Layout für kleine Bildschirme */
+  }
+
+  #main-footer .footer-container > *:last-child {
+    grid-column: 1; /* Über gesamte Breite für letztes Kind */
+  }
+
+  #main-footer .footer-container > *:first-child,
+  #main-footer .footer-container > *:nth-child(2) {
+    border-bottom: 1px dotted #444; /* Unterstrich zur Trennung */
+    padding-bottom: 0.5rem; /* Abstand unten */
+  }
+
+  .page-container {
+    grid-template-columns: 1fr; /* Einspaltiges Layout */
+    text-align: justify; /* Textausrichtung: Blocksatz */
+  }
+
+  .l-heading {
+    font-size: 2rem; /* Kleinere Schriftgröße für Überschriften */
+  }
+}

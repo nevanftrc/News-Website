@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+   <!-- Meta-Daten und Verlinkung von Stilen -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/sign_up.css">
+   <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap" rel="stylesheet">
+   <script src="sign_up.js" defer></script>
+   <title>News Website</title>
+</head>
+
+<body>
+   <!-- Hauptnavigationsleiste -->
+   <nav id="main-nav">
+      <div class="container">
+         <img src="fotos/logox.png" alt="Logo" class="logo">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="current">Über Uns</a></li>
+            <a> <button class="cta-btn" id="open">Anmelden</button> </a>
+         </ul>
+      </div>
+   </nav>
+
+   <!-- Anmelde-Modal -->
+   <div class="modal-container" id="modal">
+      <div class="modal">
+         <button class="close-btn" id="close"></button>
+         <div class="modal-header">
+            <h3>Sign Up</h3>
+         </div>
+         <div class="modal-content">
+            <p>Registrieren Sie sich bei uns, um Angebote und mehr zu erhalten</p>
+            <form class="modal-form" id="signupForm">
+               <div>
+                  <label for="name">Vorname</label>
+                  <input type="text" id="name" placeholder="Vorname eingeben" class="form-input" required>
+               </div>
+               <div>
+                  <label for="surname">Name</label>
+                  <input type="text" id="surname" placeholder="Name eingeben" class="form-input" required>
+               </div>
+               <div>
+                  <label for="phone">Telefonnummer (Optional)</label>
+                  <input type="tel" id="phone" placeholder="Telefonnummer eingeben" class="form-input">
+               </div>
+               <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Email eingeben" class="form-input" required>
+               </div>
+               <div>
+                  <label for="timestamp">Geburtsdatum</label>
+                  <input type="datetime-local" id="timestamp" class="form-input" required>
+               </div>
+               <input type="button" value="Submit" class="submit-btn" onclick="submitForm()">
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <!-- Abschnitt "Über uns" -->
+   <section id="about">
+      <div class="container">
+         <div class="page-container">
+            <article class="card">
+               <h1 class="l-heading">
+                  Unsere Organisation
+               </h1>
+               <p>
+                  Mit einem klaren Fokus auf die Bedürfnisse der Gemeinschaft bietet unser Team eine Plattform, die sowohl 
+                  informativ als auch interaktiv gestaltet ist. Wir setzen auf modernste Technologien, um unseren Nutzern 
+                  die besten Erfahrungen zu ermöglichen und deren Erwartungen zu übertreffen. Unsere Mission ist es, Wissen 
+                  zugänglich zu machen und gleichzeitig eine Verbindung zu unserer Leserschaft aufzubauen, indem wir verlässliche 
+                  und relevante Inhalte bereitstellen.
+               </p>
+
+               <p>
+                  Unsere Werte basieren auf Integrität, Transparenz und dem Engagement, stets die höchsten Standards zu wahren. 
+                  Mit einer motivierten Gruppe von Fachleuten arbeiten wir kontinuierlich daran, Innovationen voranzutreiben und 
+                  unseren Service auszubauen. Jeder Beitrag und jede Funktionalität auf unserer Plattform ist das Ergebnis sorgfältiger 
+                  Planung und Expertise, um eine positive Benutzererfahrung zu gewährleisten.
+               </p>
+
+               <p>
+                  Wir glauben daran, dass der Austausch von Wissen und die Bereitstellung von Informationen das Fundament einer starken 
+                  und aufgeklärten Gesellschaft sind. Daher legen wir großen Wert darauf, Inhalte zu kuratieren, die nicht nur informieren,
+                  sondern auch inspirieren und zum Nachdenken anregen. Unsere Artikel decken ein breites Spektrum an Themen ab – von Technologie
+                  und Wissenschaft bis hin zu Lifestyle und Unterhaltung –, um die Interessen unserer vielfältigen Leserschaft zu bedienen.
+               </p>
+            </article>
+         </div>
+      </div>
+   </section>
+
+   <!-- Fußzeile -->
+   <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+         <div><img src="fotos/logox.png" alt="Logo"></div>
+         <div>
+            <p>Copyright &copy; 2024 Nevan Alberola</p>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* Definition der globalen Variablen */
+:root {
+  --modal-duration: 1s; /* Dauer der Modalanimation */
+  --primary-color: #171e9f; /* Primärfarbe */
+}
+
+/* Grundlegende Stile für den Körper */
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+/* Stile für Buttons */
+button {
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  color: #f3f3f3;
+  cursor: pointer;
+  flex-direction: row;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Hover-Effekt für Buttons */
+button:hover {
+  color: #171e9f;
+}
+
+/* Stile für die Modalanzeige */
+.modal-container {
+  background: rgba(0, 0, 0, 0.6); /* Hintergrund mit Transparenz */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000; /* Hohe Priorität im Layout */
+}
+
+/* Klasse zum Anzeigen des Modals */
+.show-modal {
+  display: block;
+}
+
+/* Stile für das Modal selbst */
+.modal {
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  animation: modalopen var(--modal-duration); /* Öffnungsanimation */
+  overflow-y: auto;
+  max-height: 80vh; /* Maximale Höhe für Bildschirmanpassung */
+}
+
+/* Stile für den Header des Modals */
+.modal-header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+/* Stile für den Inhalt des Modals */
+.modal-content {
+  padding: 20px;
+}
+
+.modal-form div {
+  margin: 15px 0; /* Abstand zwischen den Formularfeldern */
+}
+
+.modal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+  padding: 8px;
+  width: 100%;
+}
+
+/* Schließen-Button des Modals */
+.close-btn {
+  background: transparent;
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* Animation für das Öffnen des Modals */
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

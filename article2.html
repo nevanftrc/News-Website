@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+      <!-- Meta-Daten und Stile -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/sign_up.css">
+   <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap" rel="stylesheet">
+   <script src="sign_up.js" defer></script>
+   <title>News Website</title>
+</head>
+
+<body>
+      <!-- Navigationsleiste -->
+   <nav id="main-nav">
+      <div class="container">
+         <img src="fotos/logox.png" alt="Logo" class="logo">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Über Uns</a></li>
+            <a> <button class="cta-btn" id="open">Anmelden</button> </a>
+         </ul>
+      </div>
+   </nav>
+
+   <!-- Anmelde-Modal -->
+   <div class="modal-container" id="modal">
+      <div class="modal">
+         <button class="close-btn" id="close"></button>
+         <div class="modal-header">
+            <h3>Sign Up</h3>
+         </div>
+         <div class="modal-content">
+            <p>Register with us to get offers and more</p>
+            <form class="modal-form" id="signupForm">
+               <div>
+                  <label for="name">Vorname</label>
+                  <input type="text" id="name" placeholder="Vorname eingeben" class="form-input" required>
+               </div>
+               <div>
+                  <label for="surname">Name</label>
+                  <input type="text" id="surname" placeholder="Name eingeben" class="form-input" required>
+               </div>
+               <div>
+                  <label for="phone">Telefonnummer (Optional)</label>
+                  <input type="tel" id="phone" placeholder="Telefonnummer eingeben" class="form-input">
+               </div>
+               <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Email eingeben" class="form-input" required>
+               </div>
+               <div>
+                  <label for="timestamp">Geburtsdatum</label>
+                  <input type="datetime-local" id="timestamp" class="form-input" required>
+               </div>
+               <input type="button" value="Submit" class="submit-btn" onclick="submitForm()">
+            </form>
+           </div>
+             </div>
+   </div>
+
+      <!-- Artikel-Bereich -->
+   <section id="article">
+      <div class="container">
+         <div class="page-container">
+            <article class="card">
+               <img src="fotos/foto2.jpg" alt="">
+               <h2> So viel Schlaf brauchst du in jedem Alter – schläfst du genug? </h2>
+               <p>
+                  Experten betonen, dass die optimale Schlafdauer je nach Alter erheblich variiert und maßgeblich zur 
+                  allgemeinen Gesundheit und Leistungsfähigkeit beiträgt. Neugeborene benötigen etwa 14 bis 17 Stunden 
+                  Schlaf pro Tag, während Kinder im Alter von 1 bis 2 Jahren idealerweise zwischen 11 und 14 Stunden ruhen 
+                  sollten. Mit zunehmendem Alter sinkt der Bedarf: Jugendliche kommen mit 8 bis 10 Stunden aus, und für 
+                  Erwachsene reichen meist 7 bis 9 Stunden, um vollständig regeneriert zu sein.
+               </p>
+
+               <p>
+                  Allerdings zeigt eine aktuelle Studie, dass fast 40 % der Erwachsenen regelmäßig weniger als die empfohlene 
+                  Schlafmenge erreichen. Dies führt zu einer Vielzahl von gesundheitlichen Problemen wie verminderter Konzentration, 
+                  geschwächtem Immunsystem und einem erhöhten Risiko für chronische Erkrankungen. Dr. Jana Meier, Schlafforscherin an der 
+                  Universität München, erklärt: „Der moderne Lebensstil mit langen Arbeitszeiten und übermäßiger Nutzung von Bildschirmen 
+                  vor dem Schlafengehen ist einer der Hauptfaktoren für Schlafmangel.“ Ein weiterer interessanter Befund der Studie ist, 
+                  dass ältere Erwachsene ab 65 Jahren durchschnittlich 7 bis 8 Stunden benötigen, um sich ausgeruht zu fühlen. Dennoch gaben 
+                  viele an, Schwierigkeiten beim Ein- und Durchschlafen zu haben, was oft durch veränderte Schlafmuster und gesundheitliche 
+                  Beschwerden bedingt ist. Schlafexperten empfehlen daher, eine konsistente Schlafroutine zu entwickeln, auf koffeinhaltige 
+                  Getränke vor dem Schlafengehen zu verzichten und Entspannungstechniken wie Meditation oder Atemübungen in den Alltag zu integrieren.
+                  Schläfst du also genug? Eine ehrliche Reflexion über deine Schlafgewohnheiten könnte der Schlüssel zu besserer Gesundheit und gesteigerter 
+                  Lebensqualität sein.
+               </p>
+            </article>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+         <div><img src="images/logox.png" alt="Logo"></div>
+         <div>
+            <p>Copyright &copy; 2024 Nevan Alberola</p>
+         </div>
+      </div>
+
+   </footer>
+
+</body>
+
+</html>
