@@ -2,8 +2,7 @@
 
 /* Definition der globalen Variablen */
 :root {
-  --modal-duration: 1s; /* Dauer der Modalanimation */
-  --primary-color: #171e9f; /* Primärfarbe */
+  --modal-duration: 1s; 
 }
 
 /* Grundlegende Stile für den Körper */
@@ -31,14 +30,14 @@ button:hover {
 
 /* Stile für die Modalanzeige */
 .modal-container {
-  background: rgba(0, 0, 0, 0.6); /* Hintergrund mit Transparenz */
+  background: rgba(0, 0, 0, 0.6); 
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 1000; /* Hohe Priorität im Layout */
+  z-index: 1000; 
 }
 
 /* Klasse zum Anzeigen des Modals */
@@ -62,7 +61,7 @@ button:hover {
 
 /* Stile für den Header des Modals */
 .modal-header {
-  background: var(--primary-color);
+  background: #171e9f;
   color: #fff;
   padding: 15px;
   text-align: center;
