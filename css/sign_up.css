@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
-/* Definition der globalen Variablen */
-:root {
-  --modal-duration: 1s; 
-}
-
 /* Grundlegende Stile für den Körper */
 body {
   font-family: 'Lato', sans-serif;
@@ -40,7 +35,6 @@ button:hover {
   z-index: 1000; 
 }
 
-/* Klasse zum Anzeigen des Modals */
 .show-modal {
   display: block;
 }
@@ -54,9 +48,9 @@ button:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 400px;
-  animation: modalopen var(--modal-duration); /* Öffnungsanimation */
+  animation: modalopen 1s; 
   overflow-y: auto;
-  max-height: 80vh; /* Maximale Höhe für Bildschirmanpassung */
+  max-height: 80vh; 
 }
 
 /* Stile für den Header des Modals */
@@ -77,9 +71,8 @@ button:hover {
 }
 
 .modal-form div {
-  margin: 15px 0; /* Abstand zwischen den Formularfeldern */
+  margin: 15px 0; 
 }
-
 .modal-form label {
   display: block;
   margin-bottom: 5px;
@@ -88,6 +81,21 @@ button:hover {
 .modal-form .form-input {
   padding: 8px;
   width: 100%;
+}
+
+.submit-btn {
+  background-color: #007BFF; 
+  color: #fff; 
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3; 
 }
 
 /* Schließen-Button des Modals */
