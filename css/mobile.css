@@ -20,10 +20,20 @@
 
 /* Medienabfragen für Bildschirme unter 600px */
 @media (max-width: 600px) {
-  #home-articles .articles-container,
-  #main-footer .footer-container {
+  #home-articles .articles-container {
     grid-template-columns: 1fr; 
   }
+
+  #main-footer .footer-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  #main-footer img {
+    margin-bottom: 0.5rem; 
+  }
+
 
   .page-container {
     grid-template-columns: 1fr; 
