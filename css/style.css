@@ -163,6 +163,7 @@ h6 {
   justify-content: space-between;
   padding: 1rem;
   background-color: #444;
+  align-items: center;
 }
 
 #main-nav .logo {
@@ -196,41 +197,24 @@ h6 {
 }
 
 /* Fußzeile */
-#main-footer {
-  background: var(--dark-color);
-  color: #fff;
-}
-
 #main-footer img {
   width: 70px;
+  margin: 0;
 }
+
 
 #main-footer p {
   color: #fff;
   margin: 0;
-}
-
-#main-footer .footer-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  background: #444;
-  padding: 0.4rem;
+  flex: 1; 
   text-align: center;
 }
 
-#main-footer .footer-container input[type="email"] {
-  width: 90%;
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
+#main-footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #444;
+  padding: 0.4rem;
 }
 
-#main-footer .footer-container input[type="submit"] {
-  width: 90%;
-  background: #d31099;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  padding: 8px 12px;
-}
